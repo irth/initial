@@ -6,6 +6,7 @@ const codedir = (...args) => dir('app', ...args);
 const outdir = (...args) => dir('dist', ...args);
 
 export default {
+  devtool: 'source-map',
   entry: codedir('index.jsx'),
   output: {
     filename: 'bundle.js',
